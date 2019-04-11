@@ -1,10 +1,10 @@
-/*共阴极接法。低电平或悬空，电机受控。
- 用来控制电机正反转。——推杆的伸长与缩短控制。
- pin8(IN1),pin9(IN2) is positive output;
- pin10(IN3),pin11(IN4) is negtive output.
-继电器DC+~VCC,
-      DC-~GND,
-      IN1 to IN4~pin8 to pin11,,
-电机+极~COM1~COM4;电机-极~COM2~COM3,
-电源+极~NO1~NO3; 电源-极~NO2~NO4;      
- */
+Comunication letters
+
+pump clean: m,(g,k),d       'g' for run,'k' for stop
+pump sewage: n,(g,k),d       
+cleaning head: l,(g,k),d
+force sensor: s,t,number,z
+ultrasonic sensor: s,u,number,z
+rope climbing: number(2000 vel is OK),e,number(200000 pos is OK),f,o,(g,h),d       'g' for positive,'h' for negative
+steering Vertical axis:(50~210),f,p,g,d
+steering Horizontal axis:(100~200),f,q,g,d
